@@ -30,7 +30,7 @@ public class Employee {
 	}
 
 	public void setEmpName(String empName) {
-		this.empName = empName;
+		this.empName = (empName != null) ? empName.toUpperCase() : null;
 	}
 
 	public Double getEmpSal() {
@@ -46,7 +46,7 @@ public class Employee {
 	}
 
 	public void setEmpDept(String empDept) {
-		this.empDept = empDept;
+		this.empDept = (empDept != null) ? empDept.toLowerCase() : null;
 	}
 
 	public Employee() {
